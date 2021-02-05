@@ -1,11 +1,15 @@
 import React from 'react'
 
 import GlobalStyle from './styles/global'
-import LandingPage from './pages/LandingPage'
+import Menu from './components/Menu'
+import Header from './pages/Header'
+import About from './pages/About'
 
 const App: React.FC = () => (
   <>
-    <LandingPage />
+    <Menu />
+    <Header />
+    <About />
     <GlobalStyle />
   </>
 )
