@@ -28,7 +28,7 @@ const Menu: React.FC = () => (
           </a>
         </li>
         <li>
-          <a className="smoothscroll" href="#Education">
+          <a className="smoothscroll" href="#education">
             Education
           </a>
         </li>
