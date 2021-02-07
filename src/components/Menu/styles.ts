@@ -42,6 +42,10 @@ export const Container = styled.div`
     color: #979797;
   }
 
+  ul#nav li a:hover {
+    color: #11abb0;
+  }
+
   ul#nav li a:active {
     background-color: transparent;
   }
