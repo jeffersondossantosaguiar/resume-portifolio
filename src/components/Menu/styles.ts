@@ -1,15 +1,19 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 30px;
+  border: 5px solid red;
+  width: 100%;
+  max-width: 1440px;
+
   #nav-wrap {
     font-size: 16px;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    z-index: 100;
-    position: fixed;
-    left: 0;
-    top: 30px;
   }
   .opaque {
     background-color: #333;
@@ -24,7 +28,6 @@ export const Container = styled.div`
     min-height: 48px;
     width: auto;
     text-align: right;
-    margin-right: 20%;
   }
   ul#nav li {
     position: relative;
