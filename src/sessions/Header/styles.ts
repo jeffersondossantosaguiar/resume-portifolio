@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 100vh;
     min-height: 500px;
     width: 100%;
-    background: #000;
+    background: #0d0d0d;
     background-size: cover;
     text-align: left;
     overflow: hidden;

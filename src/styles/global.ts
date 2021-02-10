@@ -7,6 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
     scroll-behavior: smooth; //smooth scroll
+    scroll-margin-top: 8vh;
   }
 
   body {

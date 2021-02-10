@@ -3,15 +3,10 @@ import { Container } from './styles'
 
 const Menu: React.FC = () => (
   <Container>
-    <nav id="nav-wrap">
-      <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-        Show navigation
-      </a>
-      <a className="mobile-btn" href="#home" title="Hide navigation">
-        Hide navigation
-      </a>
+    <nav>
+      <div className="logo">My Portifolio</div>
 
-      <ul id="nav" className="nav">
+      <ul className="nav-links">
         <li className="current">
           <a className="smoothscroll" href="#home">
             Home
