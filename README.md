@@ -6,4 +6,4 @@
 
 https://github.com/fisshy/react-scroll
 
-https://www.youtube.com/watch?v=Nl54MJDR2p8
+https://www.youtube.com/watch?v=Nl54MJDR2p8 min: 39:30

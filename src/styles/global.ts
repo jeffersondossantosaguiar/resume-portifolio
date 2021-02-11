@@ -2,15 +2,16 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+    font-family: 'Roboto', sans-serif;
+/*     outline: 0;
     scroll-behavior: smooth; //smooth scroll
-    scroll-margin-top: 8vh;
+    scroll-margin-top: 8vh; */
   }
 
-  body {
+/*   body {
     background: #FFF;
     color: #000;
     -webkit-font-smoothing: antialiased;
@@ -22,5 +23,5 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-  }
+  } */
 `

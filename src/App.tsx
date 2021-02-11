@@ -1,23 +1,17 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+
+import Navbar from './components/Navbar'
 
 import GlobalStyle from './styles/global'
-import Menu from './components/Menu'
-import Header from './sessions/Header'
-import About from './sessions/About'
-import Portifolio from './sessions/Portifolio'
-import Education from './sessions/Education'
-import Contact from './sessions/Contact'
 
-const App: React.FC = () => (
-  <>
-    <Menu />
-    <Header />
-    <About />
-    <Portifolio />
-    <Education />
-    <Contact />
-    <GlobalStyle />
-  </>
-)
+function App(): JSX.Element {
+  return (
+    <Router>
+      <Navbar />
+      <GlobalStyle />
+    </Router>
+  )
+}
 
 export default App
