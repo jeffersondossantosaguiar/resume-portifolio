@@ -5,3 +5,5 @@
 #191E26, #4A4F59, #A1A2A6, #F2F2F2, #0D0D0D
 
 https://github.com/fisshy/react-scroll
+
+https://www.youtube.com/watch?v=Nl54MJDR2p8
