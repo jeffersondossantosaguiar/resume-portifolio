@@ -11,18 +11,34 @@ import {
   NavMenu,
 } from './styles'
 
-const Navbar = (): JSX.Element => {
+interface Props {
+  toggle: () => void
+}
+
+const Navbar = ({ toggle }: Props): JSX.Element => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">My Portifolio</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
+              <NavLinks to="home">Home</NavLinks>
+            </NavItem>
+            <NavItem>
               <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="education">Education</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="portifolio">Portifolio</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
