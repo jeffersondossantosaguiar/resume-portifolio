@@ -13,50 +13,6 @@ export const Wrap = styled.div`
   max-width: 1100px;
   margin: 0 auto;
 `
-export const LinksContainer = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media screen and (max-width: 820px) {
-    padding-top: 32px;
-  }
-`
-export const LinksWrapper = styled.div`
-  display: flex;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-  }
-`
-export const LinkItems = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  box-sizing: border-box;
-  color: #fff;
-
-  @media screen and (max-width: 420px) {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
-`
-export const LinkTitle = styled.h1`
-  font-size: 14px;
-  margin-bottom: 16px;
-`
-export const Link = styled(LinkR)`
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-size: 14px;
-
-  &:hover {
-    color: #01bf71;
-    transition: 0.3s ease-out;
-  }
-`
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
