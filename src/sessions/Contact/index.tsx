@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import {
@@ -13,12 +14,18 @@ import {
 } from './styles'
 
 const Contact = (): JSX.Element => {
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
-    <Container>
+    <Container id="contact">
       <Wrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">my portifolio</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              my portifolio
+            </SocialLogo>
             <WebsiteRights>
               jefferson © {new Date().getFullYear()} All rights reserved
             </WebsiteRights>

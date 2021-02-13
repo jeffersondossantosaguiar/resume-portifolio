@@ -2,8 +2,12 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
-export const Nav = styled.div`
-  background: #000;
+interface PropsNav {
+  scrollNav: boolean
+}
+
+export const Nav = styled.div<PropsNav>`
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
