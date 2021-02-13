@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import Backgroud from '../components/Backgroud'
+import Contact from '../sessions/Contact'
+import Home from '../sessions/Home'
+import Portifolio from '../sessions/Portifolio'
 
-const Home = (): JSX.Element => {
+const LandingPage = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -14,9 +16,11 @@ const Home = (): JSX.Element => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Backgroud />
+      <Home />
+      <Portifolio />
+      <Contact />
     </>
   )
 }
 
-export default Home
+export default LandingPage
