@@ -1,11 +1,11 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import Video from '../../videos/video.mp4'
+// import Video from '../../videos/video.mp4'
 
 import {
   HomeContainer,
   HomeBg,
-  VideoBg,
+  // VideoBg,
   HomeContent,
   HomeH1,
   HomeP,

@@ -1,47 +1,51 @@
 import React from 'react'
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-1.svg'
-import Icon3 from '../../images/svg-1.svg'
+import img from '../../images/svg-1.svg'
+import eu from '../../images/me.jpeg'
 
 import {
-  Container,
-  Title,
-  PorfifolioWrapper,
-  Card,
-  Icon,
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  TextWrapper,
+  TopLine,
+  Heading,
   Subtitle,
-  Text,
+  Column2,
+  ImgWrap,
+  Img,
 } from './styles'
 
 const About = (): JSX.Element => {
   return (
-    <Container id="about">
-      <Title>
-        <PorfifolioWrapper>
-          <Card>
-            <Icon src={Icon1} />
-            <Subtitle>Reduce expenses</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-          <Card>
-            <Icon src={Icon2} />
-            <Subtitle>Virtual Ofice</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-          <Card>
-            <Icon src={Icon3} />
-            <Subtitle>Premium Benefits</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-        </PorfifolioWrapper>
-      </Title>
-    </Container>
+    <>
+      <InfoContainer id="about">
+        <InfoWrapper>
+          <InfoRow>
+            <Column1>
+              <TextWrapper>
+                <TopLine>About</TopLine>
+                <Heading>Um pouquinho sobre mim...</Heading>
+                <Subtitle>
+                  Apaixonado por Tecnologia, Games e Cultura POP. Trabalho há
+                  mais de 10 anos com suporte a usuários e a infraestrutura de
+                  redes. Estou em transição de carreira onde me dedico ao
+                  desenvolvimento frontend e mobile, focando em Javascript,
+                  React, ReactNative e NodeJs mas estou aberto a outras
+                  linguagens. Adoro aprender, trabalhar em equipe e poder dar
+                  minha contribuição para resolução de desafios.
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img src={eu} alt="me" />
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+    </>
   )
 }
 
