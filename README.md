@@ -4,8 +4,8 @@
   * Procurar uma paleta de cores direfente
 
 ## Home
-  * Color descrição e aprensentação
-  * Exprimentar usar particulas ao inves de video na home
+  ✔ Color descrição e aprensentação
+  ✔ Exprimentar usar particulas ao inves de video na home
 
 ## About
   * Criar um texto sobre mim
