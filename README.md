@@ -8,8 +8,8 @@
   ✔ Exprimentar usar particulas ao inves de video na home
 
 ## About
-  * Criar um texto sobre mim
-  * Colocar uma imagem minha
+  ✔ Criar um texto sobre mim
+  ✔ Colocar uma imagem minha
 
 ## Skills
   * Fazer uma listas das tecnologias que domino
