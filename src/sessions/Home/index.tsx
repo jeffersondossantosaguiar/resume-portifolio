@@ -17,11 +17,10 @@ const Home = (): JSX.Element => {
         <VideoBg autoPlay loop muted src={Video} />
       </HomeBg>
       <HomeContent>
-        <HomeH1>Virtual Banking Made Easy</HomeH1>
-        <HomeP>
-          Sign up for a new accoun today and receive $250 in credit towards your
-          next payment.
-        </HomeP>
+        <HomeH1>
+          Hey! I&apos;m <strong>Jefferson</strong>
+        </HomeH1>
+        <HomeP>A mobile and front-end Developer</HomeP>
       </HomeContent>
     </HomeContainer>
   )

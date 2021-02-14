@@ -6,7 +6,6 @@ export const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  /* height: 800px; */
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -55,29 +54,37 @@ export const HomeContent = styled.div`
 `
 export const HomeH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
   text-align: center;
+  font-size: 60px;
+  font-weight: 300;
 
-  @media screen and (min-width: 768px) {
-    font-size: 40px;
+  strong {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 34px;
   }
 `
 export const HomeP = styled.p`
-  margin-top: 24px;
+  margin-top: 4px;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: 300;
   text-align: center;
   max-width: 600px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
 
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 16.5px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 10px;
   }
 `

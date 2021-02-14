@@ -6,6 +6,7 @@ import Contact from '../sessions/Contact'
 import Education from '../sessions/Education'
 import Home from '../sessions/Home'
 import Portifolio from '../sessions/Portifolio'
+import Skills from '../sessions/Skiils'
 
 const LandingPage = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,6 +21,7 @@ const LandingPage = (): JSX.Element => {
       <Navbar toggle={toggle} />
       <Home />
       <About />
+      <Skills />
       <Education />
       <Portifolio />
       <Contact />
