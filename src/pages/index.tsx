@@ -22,8 +22,8 @@ const LandingPage = (): JSX.Element => {
       <Home />
       <About />
       <Skills />
-      <Education />
       <Portifolio />
+      <Education />
       <Contact />
     </>
   )

@@ -22,6 +22,7 @@
   * Criar novos projetos
 
 ## Contact
+  * Arrumar Nav para que seja habilidado na hora que estiver no contact
   * Colocar os links para me contactar
 
 # Inspirations
