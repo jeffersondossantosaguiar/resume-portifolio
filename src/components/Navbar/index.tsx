@@ -70,11 +70,6 @@ const Navbar = ({ toggle }: Props): JSX.Element => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="education" smooth duration={500} spy offset={-80}>
-                  Education
-                </NavLinks>
-              </NavItem>
-              <NavItem>
                 <NavLinks to="contact" smooth duration={500} spy offset={-80}>
                   Contact
                 </NavLinks>

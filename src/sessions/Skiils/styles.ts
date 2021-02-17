@@ -36,6 +36,13 @@ export const Column1 = styled.div`
   grid-area: col1;
 `
 export const Column2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  /* border: solid 1px red; */
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
@@ -77,12 +84,19 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 100px;
   height: 100%;
   text-align: center;
 `
 export const Img = styled.img`
-  width: 70%;
+  width: 100px;
   margin: 0 0 10px 0;
   padding-right: 0;
+`
+export const Line = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: solid 1px blue; */
+  height: 150px;
 `
