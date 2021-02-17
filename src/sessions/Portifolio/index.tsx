@@ -1,46 +1,34 @@
 import React from 'react'
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-1.svg'
-import Icon3 from '../../images/svg-1.svg'
+import Carousel from 'react-bootstrap/Carousel'
+import mp from '../../images/my-portifolio.jpg'
 
-import {
-  Container,
-  Title,
-  PorfifolioWrapper,
-  Card,
-  Icon,
-  Subtitle,
-  Text,
-} from './styles'
+import { Container } from './styles'
 
 const Portifolio = (): JSX.Element => {
   return (
     <Container id="portifolio">
-      <Title>
-        <PorfifolioWrapper>
-          <Card>
-            <Icon src={Icon1} />
-            <Subtitle>Reduce expenses</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-          <Card>
-            <Icon src={Icon2} />
-            <Subtitle>Virtual Ofice</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-          <Card>
-            <Icon src={Icon3} />
-            <Subtitle>Premium Benefits</Subtitle>
-            <Text>
-              We help recuce your fess and increase your overall revenue.
-            </Text>
-          </Card>
-        </PorfifolioWrapper>
-      </Title>
+      <Carousel>
+        <Carousel.Item>
+          <img className="d-block w-100" src={mp} alt="First slide" />
+          <Carousel.Caption>
+            <h3>My Portifolio</h3>
+            <p>
+              Feito em React mais Typescript, styled-componentes, react-scrool,
+              bootstrap, react-bootstrap
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://picsum.photos/800/400?text=Second slide&bg=282c34"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Em breve mais projetos...</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </Container>
   )
 }

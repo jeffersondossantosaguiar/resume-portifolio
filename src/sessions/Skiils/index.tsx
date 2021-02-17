@@ -1,6 +1,5 @@
 import React from 'react'
 import { SiJavascript, SiHtml5, SiCss3, SiReact } from 'react-icons/si'
-import img from '../../images/svg-1.svg'
 
 import {
   InfoContainer,

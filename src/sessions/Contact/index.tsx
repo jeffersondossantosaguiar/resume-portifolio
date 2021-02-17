@@ -30,13 +30,21 @@ const Contact = (): JSX.Element => {
               jefferson © {new Date().getFullYear()} All rights reserved
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconsLink href="/" target="_blank" aria-label="Facebook">
+              {/* <SocialIconsLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
-              </SocialIconsLink>
-              <SocialIconsLink href="/" target="_blank" aria-label="Linkedin">
+              </SocialIconsLink> */}
+              <SocialIconsLink
+                href="https://www.linkedin.com/in/jeffersonsantosaguiar/"
+                target="_blank"
+                aria-label="Linkedin"
+              >
                 <FaLinkedin />
               </SocialIconsLink>
-              <SocialIconsLink href="/" target="_blank" aria-label="Github">
+              <SocialIconsLink
+                href="https://github.com/jeffersondossantosaguiar"
+                target="_blank"
+                aria-label="Github"
+              >
                 <FaGithub />
               </SocialIconsLink>
             </SocialIcons>

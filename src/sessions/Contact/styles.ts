@@ -41,6 +41,7 @@ export const SocialLogo = styled(LinkR)`
 
   &:hover {
     color: #01bf71;
+    text-decoration: none;
     transition: 0.3s ease-out;
   }
 `

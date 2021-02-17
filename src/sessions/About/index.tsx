@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../../images/svg-1.svg'
 import eu from '../../images/me.jpeg'
 
 import {
