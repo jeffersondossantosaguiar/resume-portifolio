@@ -1,8 +1,17 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
-export const HomeContainer = styled.div`
-  background: #0c0c0c;
+export const Container = styled.div`
+  background: #100f17;
+  color: #fff;
+  .particles {
+    background: #100f17;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+`
+export const Home = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,32 +19,6 @@ export const HomeContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-
-  :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  }
-`
-export const HomeBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 `
 export const VideoBg = styled.video`
   width: 100%;
@@ -54,7 +37,6 @@ export const HomeContent = styled.div`
   align-items: center;
 `
 export const HomeH1 = styled.h1`
-  color: #fff;
   text-align: center;
   font-size: 60px;
   font-weight: 300;
@@ -72,8 +54,6 @@ export const HomeH1 = styled.h1`
   }
 `
 export const HomeP = styled.p`
-  margin-top: 4px;
-  color: #fff;
   font-size: 22px;
   font-weight: 300;
   text-align: center;
@@ -89,10 +69,7 @@ export const HomeP = styled.p`
     font-size: 10px;
   }
 `
-export const InfoContainer = styled.div`
-  color: #fff;
-  background: #f9f9f9;
-
+export const About = styled.div`
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -132,12 +109,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `
 export const TopLine = styled.p`
   color: #01bf71;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -148,18 +123,15 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: #010606;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `
-export const Subtitle = styled.p`
+export const Text = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: #010606;
 `
 export const BtnWrap = styled.div`
   display: flex;
@@ -183,13 +155,12 @@ export const Line = styled.div`
   /* border: solid 1px blue; */
   height: 150px;
 `
-export const Container = styled.div`
+export const Container2 = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
 
   .carousel {
     height: 70%;
@@ -237,7 +208,6 @@ export const SocialMediaWrap = styled.div`
   }
 `
 export const SocialLogo = styled(LinkR)`
-  color: #fff;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -254,7 +224,6 @@ export const SocialLogo = styled(LinkR)`
   }
 `
 export const WebsiteRights = styled.small`
-  color: #fff;
   margin-bottom: 16px;
 `
 export const SocialIcons = styled.div`
@@ -264,7 +233,6 @@ export const SocialIcons = styled.div`
   width: 240px;
 `
 export const SocialIconsLink = styled.a`
-  color: #fff;
   font-size: 24px;
 
   &:hover {

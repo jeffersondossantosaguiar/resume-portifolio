@@ -13,19 +13,19 @@ import mp from '../images/my-portifolio.jpg'
 
 import {
   Container,
-  HomeContainer,
-  HomeBg,
+  Container2,
+  Home,
   HomeContent,
   HomeH1,
   HomeP,
-  InfoContainer,
+  About,
   InfoWrapper,
   InfoRow,
   Column1,
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
+  Text,
   Column2,
   ImgWrap,
   Img,
@@ -51,48 +51,38 @@ const LandingPage = (): JSX.Element => {
   }
 
   return (
-    <>
+    <Container>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HomeContainer id="home">
-        <HomeBg>
-          <Particles
-            height="100vh"
-            params={{
-              particles: {
-                number: {
-                  value: 40,
-                },
-                size: {
-                  value: 2,
-                },
-              },
-              interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: 'repulse',
-                  },
-                },
-              },
-            }}
-          />
-        </HomeBg>
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 40,
+            },
+            size: {
+              value: 2,
+            },
+          },
+        }}
+      />
+      <Home id="home">
         <HomeContent>
           <HomeH1>
             Hey! I&apos;m <strong>Jefferson</strong>
           </HomeH1>
           <HomeP>A mobile and front-end Developer</HomeP>
         </HomeContent>
-      </HomeContainer>
-      <InfoContainer id="about">
+      </Home>
+      <About id="about">
         <InfoWrapper>
           <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>About</TopLine>
+                <TopLine className="gradient">About</TopLine>
                 <Heading>Um pouquinho sobre mim...</Heading>
-                <Subtitle>
+                <Text>
                   Apaixonado por Tecnologia, Games e Cultura POP. Atualmente
                   cursando Ciência da Computação (Univercidade Anhembi Morumbi),
                   trabalho há mais de 10 anos com suporte a usuários e a
@@ -101,7 +91,7 @@ const LandingPage = (): JSX.Element => {
                   Javascript, React, ReactNative e NodeJs mas estou aberto a
                   outras linguagens. Adoro aprender, trabalhar em equipe e poder
                   dar minha contribuição para resolução de desafios.
-                </Subtitle>
+                </Text>
               </TextWrapper>
             </Column1>
             <Column2>
@@ -111,23 +101,14 @@ const LandingPage = (): JSX.Element => {
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </InfoContainer>
-      <InfoContainer id="skills">
+      </About>
+      <About id="skills">
         <InfoWrapper>
           <InfoRow>
             <Column1>
               <TextWrapper>
                 <TopLine>Skills</TopLine>
                 <Heading>Languages and framework that i speak:</Heading>
-                {/* <Subtitle>
-                  Apaixonado por Tecnologia, Games e Cultura POP. Trabalho há
-                  mais de 10 anos com suporte a usuários e a infraestrutura de
-                  redes. Estou em transição de carreira onde me dedico ao
-                  desenvolvimento frontend e mobile, focando em Javascript,
-                  React, ReactNative e NodeJs mas estou aberto a outras
-                  linguagens. Adoro aprender, trabalhar em equipe e poder dar
-                  minha contribuição para resolução de desafios.
-                </Subtitle> */}
               </TextWrapper>
             </Column1>
             <Column2>
@@ -142,8 +123,8 @@ const LandingPage = (): JSX.Element => {
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </InfoContainer>
-      <Container id="portifolio">
+      </About>
+      <Container2 id="portifolio">
         <Carousel>
           <Carousel.Item>
             <img className="d-block w-100" src={mp} alt="First slide" />
@@ -166,8 +147,8 @@ const LandingPage = (): JSX.Element => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      </Container>
-      <Container id="contact">
+      </Container2>
+      <Container2 id="contact">
         <Wrap>
           <SocialMedia>
             <SocialMediaWrap>
@@ -178,9 +159,6 @@ const LandingPage = (): JSX.Element => {
                 jefferson © {new Date().getFullYear()} All rights reserved
               </WebsiteRights>
               <SocialIcons>
-                {/* <SocialIconsLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconsLink> */}
                 <SocialIconsLink
                   href="https://www.linkedin.com/in/jeffersonsantosaguiar/"
                   target="_blank"
@@ -199,8 +177,8 @@ const LandingPage = (): JSX.Element => {
             </SocialMediaWrap>
           </SocialMedia>
         </Wrap>
-      </Container>
-    </>
+      </Container2>
+    </Container>
   )
 }
 
