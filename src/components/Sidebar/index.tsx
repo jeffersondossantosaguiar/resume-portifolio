@@ -27,6 +27,9 @@ const Sidebar = ({ isOpen, toggle }: Props): JSX.Element => {
           <SidebarLink to="about" onClick={toggle}>
             About
           </SidebarLink>
+          <SidebarLink to="skills" onClick={toggle}>
+            Skills
+          </SidebarLink>
           <SidebarLink to="portifolio" onClick={toggle}>
             Portifolio
           </SidebarLink>

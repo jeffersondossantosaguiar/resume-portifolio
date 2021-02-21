@@ -9331,6 +9331,11 @@ react-overlays@^4.1.1:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
+react-parallax-tilt@^1.4.87:
+  version "1.4.87"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.87.tgz#a2e263ccc48e767eecae2bb1d65025faf7875380"
+  integrity sha512-OTL1t9VFEcmss+tM/JrHY/qBZ2ny/4AvNvnjzGbgqqL1KPa6Fkyb74SkmMxsMr0JkJLawaDXySVvXs946hTCfw==
+
 react-particles-js@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.4.1.tgz#e0f17ae1ddb07d01ce911448db76cd59726fe666"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Particles from 'react-particles-js'
+import Tilt from 'react-parallax-tilt'
 
 import { SiJavascript, SiHtml5, SiCss3, SiReact } from 'react-icons/si'
 import Carousel from 'react-bootstrap/Carousel'
@@ -10,15 +11,14 @@ import Sidebar from '../components/Sidebar'
 
 import eu from '../images/me.jpeg'
 import mp from '../images/my-portifolio.jpg'
+import img from '../images/svg-1.svg'
 
 import {
   Container,
   Container2,
   Home,
-  HomeContent,
-  HomeH1,
-  HomeP,
   About,
+  Skills,
   InfoWrapper,
   InfoRow,
   Column1,
@@ -68,19 +68,22 @@ const LandingPage = (): JSX.Element => {
         }}
       />
       <Home id="home">
-        <HomeContent>
-          <HomeH1>
+        <div className="content">
+          <h1>
             Hey! I&apos;m <strong>Jefferson</strong>
-          </HomeH1>
-          <HomeP>A mobile and front-end Developer</HomeP>
-        </HomeContent>
+          </h1>
+          <p>A mobile and front-end Developer</p>
+        </div>
+        <div className="home-image">
+          <img src={img} alt="imagem dev" />
+        </div>
       </Home>
       <About id="about">
         <InfoWrapper>
           <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine className="gradient">About</TopLine>
+                <TopLine>About</TopLine>
                 <Heading>Um pouquinho sobre mim...</Heading>
                 <Text>
                   Apaixonado por Tecnologia, Games e Cultura POP. Atualmente
@@ -102,28 +105,66 @@ const LandingPage = (): JSX.Element => {
           </InfoRow>
         </InfoWrapper>
       </About>
-      <About id="skills">
-        <InfoWrapper>
-          <InfoRow>
-            <Column1>
-              <TextWrapper>
-                <TopLine>Skills</TopLine>
-                <Heading>Languages and framework that i speak:</Heading>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <Line>
-                <SiJavascript color="#EFD81D" size="100" />
-                <SiHtml5 color="#DD4B25" size="100" />
-              </Line>
-              <Line>
-                <SiCss3 color="#1B73B7" size="100" />
-                <SiReact color="#5DD2F3" size="100" />
-              </Line>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </About>
+      <Skills id="skills">
+        <div className="title">
+          <h1>Skills</h1>
+          <p>Languages and framework that I speak:</p>
+        </div>
+        <div className="cards-container">
+          <Tilt>
+            <div className="card">
+              <div className="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>
+                  lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
+                  non pro id el component e.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </Tilt>
+          <Tilt>
+            <div className="card">
+              <div className="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>
+                  lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
+                  non pro id el component e.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </Tilt>
+          <Tilt>
+            <div className="card">
+              <div className="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>
+                  lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
+                  non pro id el component e.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </Tilt>
+          <Tilt>
+            <div className="card">
+              <div className="content">
+                <h2>04</h2>
+                <h3>Card Four</h3>
+                <p>
+                  lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
+                  non pro id el component e.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+      </Skills>
       <Container2 id="portifolio">
         <Carousel>
           <Carousel.Item>

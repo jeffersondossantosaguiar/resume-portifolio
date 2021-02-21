@@ -18,65 +18,166 @@ export const Home = styled.div`
   padding: 0 30px;
   height: 100vh;
   position: relative;
-  z-index: 1;
+
+  @media screen and (max-width: 1250px) {
+    .home-image {
+      display: none;
+    }
+  }
+
+  .content {
+    max-width: 1200px;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+    }
+  }
+
+  .content h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+
+    strong {
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 34px;
+    }
+  }
+
+  .content p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 600px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16.5px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+
+  .home-image img {
+    max-height: 250px;
+  }
 `
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
-`
-export const HomeContent = styled.div`
-  z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
-  display: flex;
-  flex-direction: column;
+
+export const About = styled.div``
+export const Skills = styled.div`
+  height: auto;
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main-axis vertical */
+  justify-content: center; /* align items vertically, in this case */
   align-items: center;
-`
-export const HomeH1 = styled.h1`
-  text-align: center;
-  font-size: 60px;
-  font-weight: 300;
 
-  strong {
-    font-weight: 500;
+  .title {
+    padding-top: 100px;
+    width: 80%;
+    max-width: 1300px;
+
+    h1 {
+      color: #01bf71;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 24px;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 600;
+
+      @media screen and (max-width: 480px) {
+        font-size: 32px;
+      }
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 48px;
-  }
+  .cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-  @media screen and (max-width: 480px) {
-    font-size: 34px;
-  }
-`
-export const HomeP = styled.p`
-  font-size: 22px;
-  font-weight: 300;
-  text-align: center;
-  max-width: 600px;
-  text-transform: uppercase;
-  letter-spacing: 2.8px;
+    @media screen and (max-width: 480px) {
+      height: auto;
+    }
 
-  @media screen and (max-width: 768px) {
-    font-size: 16.5px;
-  }
+    .card {
+      position: relative;
+      width: 280px;
+      height: 400px;
+      margin: 30px;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(5px);
 
-  @media screen and (max-width: 480px) {
-    font-size: 10px;
-  }
-`
-export const About = styled.div`
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
+      .content {
+        padding: 20px;
+        text-align: center;
+        transition: 0.5s;
+      }
+
+      .content h2 {
+        position: absolute;
+        top: -25px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(255, 255, 255, 0.05);
+        pointer-events: none;
+      }
+      .content h3 {
+        font-size: 1.8em;
+        color: #fff;
+        z-index: 1;
+      }
+      .content p {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+      }
+      .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: #fff;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
 `
 export const InfoWrapper = styled.div`
   display: grid;
-  z-index: 1;
   height: 860px;
   width: 100%;
   max-width: 1100px;
@@ -152,7 +253,6 @@ export const Line = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* border: solid 1px blue; */
   height: 150px;
 `
 export const Container2 = styled.div`
