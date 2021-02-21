@@ -145,9 +145,9 @@ export const Skills = styled.div`
 
       .content h2 {
         position: absolute;
-        top: -25px;
+        top: -10px;
         right: 30px;
-        font-size: 8em;
+        font-size: 5em;
         color: rgba(255, 255, 255, 0.05);
         pointer-events: none;
       }
@@ -155,6 +155,9 @@ export const Skills = styled.div`
         font-size: 1.8em;
         color: #fff;
         z-index: 1;
+      }
+      .content img {
+        width: 100px;
       }
       .content p {
         font-size: 1em;
@@ -255,6 +258,51 @@ export const Line = styled.div`
   justify-content: space-around;
   height: 150px;
 `
+export const Contact = styled.div`
+  height: 100vh;
+  display: flex;
+
+  .content {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+    .social-media-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+    }
+
+    .web-site-rights {
+      margin-bottom: 16px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 240px;
+      font-size: 50px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #01bf71;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+`
 export const Container2 = styled.div`
   height: 100vh;
   display: flex;
@@ -283,35 +331,10 @@ export const Container2 = styled.div`
     }
   }
 `
-export const Wrap = styled.div`
-  padding: 48px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-`
-export const SocialMedia = styled.section`
-  max-width: 1000px;
-  width: 100%;
-`
-export const SocialMediaWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 40px auto 0 auto;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-  }
-`
 export const SocialLogo = styled(LinkR)`
   justify-self: start;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -322,21 +345,8 @@ export const SocialLogo = styled(LinkR)`
     text-decoration: none;
     transition: 0.3s ease-out;
   }
-`
-export const WebsiteRights = styled.small`
-  margin-bottom: 16px;
-`
-export const SocialIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
-`
-export const SocialIconsLink = styled.a`
-  font-size: 24px;
 
-  &:hover {
-    color: #01bf71;
-    transition: 0.3s ease-out;
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
   }
 `

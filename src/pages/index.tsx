@@ -16,6 +16,7 @@ import img from '../images/svg-1.svg'
 import {
   Container,
   Container2,
+  Contact,
   Home,
   About,
   Skills,
@@ -29,14 +30,7 @@ import {
   Column2,
   ImgWrap,
   Img,
-  Line,
-  Wrap,
-  SocialMedia,
-  SocialMediaWrap,
-  SocialIcons,
-  SocialIconsLink,
   SocialLogo,
-  WebsiteRights,
 } from './styles'
 
 const LandingPage = (): JSX.Element => {
@@ -114,52 +108,57 @@ const LandingPage = (): JSX.Element => {
           <Tilt>
             <div className="card">
               <div className="content">
-                <h2>01</h2>
-                <h3>Card One</h3>
-                <p>
+                <h2>JS</h2>
+
+                <SiJavascript size="200px" color="#E9D44C" />
+                {/* <h3>Card One</h3> */}
+                {/* <p>
                   lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
                   non pro id el component e.
-                </p>
-                <a href="/">Read More</a>
+                </p> */}
+                <a href="/">Javascript</a>
               </div>
             </div>
           </Tilt>
           <Tilt>
             <div className="card">
               <div className="content">
-                <h2>02</h2>
-                <h3>Card Two</h3>
+                <h2>JSX</h2>
+                <SiReact size="200px" color="#61DBFB" />
+                {/* <h3>Card Two</h3>
                 <p>
                   lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
                   non pro id el component e.
-                </p>
-                <a href="/">Read More</a>
+                </p> */}
+                <a href="/">React</a>
               </div>
             </div>
           </Tilt>
           <Tilt>
             <div className="card">
               <div className="content">
-                <h2>03</h2>
-                <h3>Card Three</h3>
+                <h2>HTML</h2>
+                <SiHtml5 size="200px" color="#DC4D25" />
+                {/* <h3>Card Three</h3>
                 <p>
                   lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
                   non pro id el component e.
-                </p>
-                <a href="/">Read More</a>
+                </p> */}
+                <a href="/">HTML</a>
               </div>
             </div>
           </Tilt>
           <Tilt>
             <div className="card">
               <div className="content">
-                <h2>04</h2>
-                <h3>Card Four</h3>
+                <h2>CSS</h2>
+                <SiCss3 size="200px" color="#1A6FB4" />
+                {/* <h3>Card Four</h3>
                 <p>
                   lorem ipsum dolor sit amet, consectetur adipis ac turpis eu
                   non pro id el component e.
-                </p>
-                <a href="/">Read More</a>
+                </p> */}
+                <a href="/">CSS</a>
               </div>
             </div>
           </Tilt>
@@ -189,36 +188,36 @@ const LandingPage = (): JSX.Element => {
           </Carousel.Item>
         </Carousel>
       </Container2>
-      <Container2 id="contact">
-        <Wrap>
-          <SocialMedia>
-            <SocialMediaWrap>
-              <SocialLogo to="/" onClick={toggleHome}>
-                my portifolio
-              </SocialLogo>
-              <WebsiteRights>
-                jefferson © {new Date().getFullYear()} All rights reserved
-              </WebsiteRights>
-              <SocialIcons>
-                <SocialIconsLink
-                  href="https://www.linkedin.com/in/jeffersonsantosaguiar/"
-                  target="_blank"
-                  aria-label="Linkedin"
-                >
-                  <FaLinkedin />
-                </SocialIconsLink>
-                <SocialIconsLink
-                  href="https://github.com/jeffersondossantosaguiar"
-                  target="_blank"
-                  aria-label="Github"
-                >
-                  <FaGithub />
-                </SocialIconsLink>
-              </SocialIcons>
-            </SocialMediaWrap>
-          </SocialMedia>
-        </Wrap>
-      </Container2>
+      <Contact id="contact">
+        <div className="content">
+          <div className="social-media-wrap">
+            <SocialLogo to="/" onClick={toggleHome}>
+              My Portifolio
+            </SocialLogo>
+            <small className="web-site-rights">
+              jefferson © {new Date().getFullYear()} All rights reserved
+            </small>
+            <div className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/jeffersonsantosaguiar/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Linkedin"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/jeffersondossantosaguiar"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
+                <FaGithub />
+              </a>
+            </div>
+          </div>
+        </div>
+      </Contact>
     </Container>
   )
 }
